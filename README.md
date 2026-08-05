@@ -122,6 +122,7 @@ nRF24L01+ Power Adapter Pinout
 | **MISO** | **Pin 21** | **GPIO 9 (SPI0_MISO)** |
 
 ---
+<img width="2064" height="1185" alt="raspberry-pi-5-gpio-pinout-diagram" src="https://github.com/user-attachments/assets/d86e6ee5-1cff-456e-99ff-df1ba5a1b983" />
 
 ## 🦴 2. BeagleBone Black (`/dev/spidev1.0` - Header P9)
 
@@ -134,6 +135,9 @@ nRF24L01+ Power Adapter Pinout
 | **SCK** | **P9_31** | **SPI1_SCLK** |
 | **MOSI** | **P9_30** | **SPI1_D1 (MOSI)** |
 | **MISO** | **P9_29** | **SPI1_D0 (MISO)** |
+
+---
+<img width="1194" height="901" alt="beaglebone-black-pinout" src="https://github.com/user-attachments/assets/2fd2aacb-a9e1-4415-9091-475de16d660a" />
 
 ## 🚀 Execution
 
