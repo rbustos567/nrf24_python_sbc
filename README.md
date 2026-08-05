@@ -1,8 +1,12 @@
-nRF24L01+ Python Examples for Linux SBCs (Raspberry Pi 3/5 & BeagleBone Black)
-This repository provides clean Python examples for sending and receiving data using the nRF24L01+ 2.4 GHz RF transceiver module across different Single Board Computers (SBCs) via the official RF24 Python wrapper (pyRF24).
+# nRF24L01+ Python Examples for Linux SBCs (Raspberry Pi 3/5 & BeagleBone Black)
 
-📁 Repository Structure
+This repository provides clean Python examples for sending and receiving data using the **nRF24L01+** 2.4 GHz RF transceiver module across different Single Board Computers (SBCs) via the official **`RF24` Python wrapper (`pyRF24`)**.
 
+---
+
+## 📁 Repository Structure
+
+```text
 nrf24_python_sbc/
 ├── README.md
 ├── install_rf24_python_lib.sh
