@@ -16,8 +16,9 @@ Before running the scripts, you must ensure that the SPI hardware interface is e
 
 #### 🍓 Raspberry Pi (3B+ / 5)
 
-```bash
-**How to Enable SPI:**
+```text
+How to Enable SPI:
+
 1. Open the Raspberry Pi configuration tool:
    ```bash
    sudo raspi-config
@@ -25,6 +26,49 @@ Before running the scripts, you must ensure that the SPI hardware interface is e
 2. Navigate to Interface Options -> SPI.
 3. Select Yes when asked if you want the SPI interface to be enabled.
 4. Reboot your board to apply the changes:
+```
+
+#### 🦴 BeagleBone Black
+
+```text
+How to Enable SPI1:
+
+On recent Debian distributions (11/12/13), SPI1 can be enabled via Device Tree Overlays in /boot/uEnv.txt.
+
+1. Open /boot/uEnv.txt in a text editor:
+sudo nano /boot/uEnv.txt
+
+2. Locate the line starting with uboot_overlay_addr or enable_uboot_overlays=1 and ensure SPI1 is enabled:
+uboot_overlay_addr4=/lib/firmware/BB-SPI1-00A0.dtbo
+(Alternatively, if using uboot_overlay_pru, add uboot_overlay_addr4=/lib/firmware/BB-SPIDEV1-00A0.dtbo)
+
+3. Save the file and reboot the BeagleBone Black:
+sudo reboot
+
+How to Verify:
+Verify that the spidev1 nodes appear in /dev:
+
+ls -l /dev/spidev1.*
+
+Expected Output:
+
+crw-rw---- 1 root spi 153, 0 Aug  4 21:00 /dev/spidev1.0
+crw-rw---- 1 root spi 153, 1 Aug  4 21:00 /dev/spidev1.1
+```
+
+### Installing the RF24 Python Library
+
+```text
+An installation script install_rf24_python_lib.sh is provided in the repository to automate building the C++ RF24 core library with SPIDEV support and compiling its Python wrapper (pyRF24).
+
+1. Make the script executable:
+chmod +x install_rf24_python_lib.sh
+
+2. Run the installation script:
+./install_rf24_python_lib.sh
+
+3. Verify that Python can import the RF24 module without errors:
+python3 -c "import RF24; print('✅ pyRF24 installed successfully!')"
 ```
 
 ## 📁 Repository Structure
