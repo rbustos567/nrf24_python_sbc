@@ -1,6 +1,7 @@
 # nRF24L01+ Python Examples for Linux SBCs (Raspberry Pi 3/5 & BeagleBone Black)
 
 This repository provides clean Python examples for sending and receiving data using the **nRF24L01+** 2.4 GHz RF transceiver module across different Single Board Computers (SBCs) via the official **`RF24` Python wrapper (`pyRF24`)**.
+Note: I have noticed that some nRF24L01+ work as either only Transmitter or Receiver. Therefore, identify which is which, and you can only run one direction communication between two SBCs. Also, I was able to transmit messages between rpi and BBB.
 
 ---
 
