@@ -32,7 +32,7 @@ nRF24L01+ Power Adapter Pinout
 
 ## 🍓 1. Raspberry Pi 3 & Raspberry Pi 5 (`/dev/spidev0.0`)
 
-| Adapter Pin | RPi Physical Pin (40-pin Header) | Function / Signal |
+| nRF24L01+ | RPi Physical Pin (40-pin Header) | Function / Signal |
 | :--- | :--- | :--- |
 | **VCC** | **Pin 2** or **Pin 4** | **5V Power** |
 | **GND** | **Pin 6** | **Ground** |
@@ -46,7 +46,7 @@ nRF24L01+ Power Adapter Pinout
 
 ## 🦴 2. BeagleBone Black (`/dev/spidev1.0` - Header P9)
 
-| Adapter Pin | BBB Physical Pin (Header P9) | Function / Signal |
+| nRF24L01+ | BBB Physical Pin (Header P9) | Function / Signal |
 | :--- | :--- | :--- |
 | **VCC** | **P9_07** or **P9_08** | **SYS_5V (5V Power)** |
 | **GND** | **P9_01** or **P9_02** | **DGND (Ground)** |
