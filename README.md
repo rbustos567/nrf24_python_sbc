@@ -128,13 +128,13 @@ nRF24L01+ Power Adapter Pinout
 
 | nRF24L01+ | BBB Physical Pin (Header P9) | Function / Signal |
 | :--- | :--- | :--- |
-| **VCC** | **P9_07** or **P9_08** | **SYS_5V (5V Power)** |
+| **VCC** | **P9_05** or **P9_06** | **VDD_5V (5V Power)** |
 | **GND** | **P9_01** or **P9_02** | **DGND (Ground)** |
-| **CE** | **P9_12** | **GPIO1_28** |
-| **CSN** | **P9_28** | **SPI1_CS0** |
-| **SCK** | **P9_31** | **SPI1_SCLK** |
-| **MOSI** | **P9_30** | **SPI1_D1 (MOSI)** |
-| **MISO** | **P9_29** | **SPI1_D0 (MISO)** |
+| **CE** | **P9_12** | **GPIO_60** |
+| **CSN** | **P9_17** | **SPI0_CS0** |
+| **SCK** | **P9_22** | **SPI0_SCLK** |
+| **MOSI** | **P9_18** | **SPI0_D1** |
+| **MISO** | **P9_21** | **SPI0_D0** |
 
 ---
 <img width="1194" height="901" alt="beaglebone-black-pinout" src="https://github.com/user-attachments/assets/2fd2aacb-a9e1-4415-9091-475de16d660a" />
