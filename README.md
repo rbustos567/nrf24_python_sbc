@@ -6,7 +6,7 @@ This repository provides clean Python examples for sending and receiving data us
 
 ## 📁 Repository Structure
 
-```text
+```bash
 nrf24_python_sbc/
 ├── README.md
 ├── install_rf24_python_lib.sh
@@ -16,8 +16,9 @@ nrf24_python_sbc/
 └── bbb/
     ├── tx_rf24_test.py
     └── rx_rf24_test.py
+```
 
-🔌 Hardware Wiring (Pinout Guides)
+## 🔌 Hardware Wiring (Pinout Guides)
 Important: It is strongly recommended to use the nRF24L01+ Adapter Module (with an on-board AMS1117 3.3V regulator and decoupling capacitors) to ensure power stability. Connect VCC of the adapter module to 5V.
 
 nRF24L01+ Power Adapter Pinout
