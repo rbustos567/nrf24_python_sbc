@@ -56,28 +56,27 @@ nRF24L01+ Power Adapter Pinout
 | **MOSI** | **P9_30** | **SPI1_D1 (MOSI)** |
 | **MISO** | **P9_29** | **SPI1_D0 (MISO)** |
 
+## 🚀 Execution
 
-
-🚀 Execution
-Raspberry Pi 3 / 5:
-
+# Raspberry Pi 3 / 5:
+```bash
 # Terminal 1 - Receiver
 python3 rx_rf24.py
 
 # Terminal 2 - Transmitter
 python3 tx_rf24.py
+```
 
-
-BeagleBone Black:
-
+# BeagleBone Black:
+```bash
 # Terminal 1 - Receiver
 python3 rx_rf24.py
 
 # Terminal 2 - Transmitter
 python3 tx_rf24.py
+```
 
-
-🛠️ Troubleshooting
+## 🛠️ Troubleshooting
 If you experience lost packets or connection timeouts:
 
 1. Ensure the RF24 Python module is properly imported: python3 -c "import RF24".
