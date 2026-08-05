@@ -26,6 +26,18 @@ How to Enable SPI:
 2. Navigate to Interface Options -> SPI.
 3. Select Yes when asked if you want the SPI interface to be enabled.
 4. Reboot your board to apply the changes:
+sudo reboot now
+
+How to Verify:
+Run the following command to check if the SPI device nodes are created:
+
+ls -l /dev/spidev*
+
+Expected Output:
+
+crw-rw---- 1 root spi 153, 0 Aug  4 21:00 /dev/spidev0.0
+crw-rw---- 1 root spi 153, 1 Aug  4 21:00 /dev/spidev0.1
+
 ```
 
 #### 🦴 BeagleBone Black
