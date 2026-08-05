@@ -6,6 +6,27 @@ Note: As of now, I have been able to make work the nRF24L01+ modules as either o
 
 ---
 
+## ⚙️ Prerequisites & System Configuration
+
+Before running the scripts, you must ensure that the SPI hardware interface is enabled on your board and that the required Python library is installed.
+
+---
+
+### 1. Enabling & Verifying SPI Hardware Interface
+
+#### 🍓 Raspberry Pi (3B+ / 5)
+
+```bash
+**How to Enable SPI:**
+1. Open the Raspberry Pi configuration tool:
+   ```bash
+   sudo raspi-config
+
+2. Navigate to Interface Options -> SPI.
+3. Select Yes when asked if you want the SPI interface to be enabled.
+4. Reboot your board to apply the changes:
+```
+
 ## 📁 Repository Structure
 
 ```bash
