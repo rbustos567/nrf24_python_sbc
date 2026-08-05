@@ -20,7 +20,7 @@ nrf24_python_sbc/
 
 ## 🔌 Hardware Wiring (Pinout Guides)
 Important: It is strongly recommended to use the nRF24L01+ Adapter Module (with an on-board AMS1117 3.3V regulator and decoupling capacitors) to ensure power stability. Connect VCC of the adapter module to 5V.
-
+```bash
 nRF24L01+ Power Adapter Pinout
              ┌───────────────┐
        GND  ─┤ [1]       [2] ├─ VCC (5V Input)
@@ -28,7 +28,9 @@ nRF24L01+ Power Adapter Pinout
        SCK  ─┤ [5]       [6] ├─ MOSI
       MISO  ─┤ [7]       [8] ├─ IRQ (Unused)
              └───────────────┘
-### 🍓 1. Raspberry Pi 3 & Raspberry Pi 5 (`/dev/spidev0.0`)
+```
+
+## 🍓 1. Raspberry Pi 3 & Raspberry Pi 5 (`/dev/spidev0.0`)
 
 | Adapter Pin | RPi Physical Pin (40-pin Header) | Function / Signal |
 | :--- | :--- | :--- |
@@ -42,7 +44,7 @@ nRF24L01+ Power Adapter Pinout
 
 ---
 
-### 🦴 2. BeagleBone Black (`/dev/spidev1.0` - Header P9)
+## 🦴 2. BeagleBone Black (`/dev/spidev1.0` - Header P9)
 
 | Adapter Pin | BBB Physical Pin (Header P9) | Function / Signal |
 | :--- | :--- | :--- |
