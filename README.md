@@ -60,20 +60,20 @@ nRF24L01+ Power Adapter Pinout
 
 # Raspberry Pi 3 / 5:
 ```bash
-# Terminal 1 - Receiver
-python3 rx_rf24.py
+# Terminal 1 - SBC with nRF24L01+ Receiver
+sudo python3 rx_rf24_test.py
 
-# Terminal 2 - Transmitter
-python3 tx_rf24.py
+# Terminal 2 - SBC with nRF24L01+ Transmitter
+sudo python3 tx_rf24_test.py
 ```
 
 # BeagleBone Black:
 ```bash
-# Terminal 1 - Receiver
-python3 rx_rf24.py
+# Terminal 1 - SBC with nRF24L01+ Receiver
+sudo python3 rx_rf24_test.py
 
-# Terminal 2 - Transmitter
-python3 tx_rf24.py
+# Terminal 2 - SBC with nRF24L01+ Transmitter
+sudo python3 tx_rf24_test.py
 ```
 
 ## 🛠️ Troubleshooting
